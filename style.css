@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.container {
+    max-width: 2280px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.schedule {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.day {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.day h2 {
+    background-color: #6f6f6f;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 50px;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+/* Estilos para las materias */
+p {
+    font-size: 16px;
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    display: flex; /* Para alinear el texto de las horas y las materias */
+    justify-content: space-between; /* Mantiene las horas a la izquierda y el texto de la materia a la derecha */
+    padding-left: 0; /* Elimina el padding a la izquierda */
+}
+
+p strong {
+     /* Cambia el color de las horas a negro */
+    background-color: transparent; /* Elimina el fondo de las horas */
+    padding-left: 5px; /* Elimina el padding del strong */
+    margin-right: 10px; /* Asegura algo de espacio entre las horas y las materias */
+    font-weight: 900; /* Para que no resalten tanto */
+}
+
+
+
+
+.black {
+    background-color: #000000;
+}
+
+.ventasSTA1 {
+    background-color: rgb(0, 102, 255);
+}
+
+.camaristasSPAMantAA1 {
+    background-color: rgb(252, 208, 180);
+}
+
+.gerenciaB1 {
+    background-color: rgb(88, 3, 101);
+}
+
+.direccion {
+    background-color: rgb(107, 174, 219);
+}
+
+.contabilidadB1 {
+    background-color: rgb(17, 218, 3);
+}
+
+.ITA2 {
+    background-color: rgb(42, 105, 13);
+}
+
+.disenoA2 {
+    background-color: rgb(219, 216, 35);
+}
+
+.HRA2 {
+    background-color: rgb(213, 33, 207);
+}
+
+.cocinaPisoA2 {
+    background-color: rgb(255, 133, 33);
+}
+
+.ventasJumpinA1 {
+    background-color: rgb(125, 71, 9);
+}
+
+.serviciosGeneralesA1 {
+    background-color: rgb(85, 207, 238);
+}
+
+.contabilidadA2 {
+    background-color: rgb(119, 68, 100);
+}
+
+.recepcionB1 {
+    background-color: rgb(160, 84, 84);
+}
+
+.camaristasSPAMantBA1 {
+    background-color: rgb(221, 204, 106);
+}
+
+.camaristasSPAMantCA1 {
+    background-color: rgb(249, 102, 102);
+}
+
+
+
+
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .schedule {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .schedule {
+        grid-template-columns: 1fr;
+    }
+}
